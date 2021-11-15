@@ -7,26 +7,14 @@ import java.util.PriorityQueue;
 
 public class TestBai3 {
     public TestBai3(){
-    PriorityQueue<Task> queue=new PriorityQueue<>();
-    Task t1=new Task("Di Hoc",10, 0);
-    Task t2=new Task("Di Lam",2, 0);
-    Task t3=new Task("Di Choi",5, 3);
-    Task t4=new Task("Di Choi Tet",5, 1);
-    
-    queue.add(t1);
-    queue.add(t2);
-    queue.add(t3);
-    queue.add(t4);
-    Task t=queue.poll();
-    System.out.println(t);
-    System.out.println(queue.poll());
-    //hoa dung vong lap ben duoi de duyet cac task
-    Iterator<Task> itor=queue.iterator();
-    while(itor.hasNext())
-    {
-    Task x=itor.next();
-    System.out.println(x);
-    }
-
+        QuanLyCongViec qlcv = new QuanLyCongViec();
+        qlcv.themCongViec(new Task("Di Hoc", 15, 0));
+        qlcv.themCongViec(new Task("Qua nha ban choi", 10, 0));
+        qlcv.themCongViec(new Task("Qua nha co choi", 10, 0));
+        qlcv.themCongViec(new Task("Qua nha chu di choi", 10, 0));
+        qlcv.themCongViec(new Task("Qua nha thay choi", 12, 0));
+        
+        System.out.println(qlcv);
+        //qlcv.runAll();
     }
 }

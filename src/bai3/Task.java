@@ -37,9 +37,12 @@ public class Task implements Comparable<Task> {
         
         // Sap xep theo do uu tien
         result = this.priority - task.priority;
+        result *= -1;
         if(result != 0) return result;
         
+        // Sap xep theo do phuc tap
         result = this.doPhucTap - task.doPhucTap;
+        result *= -1;
         if(result != 0) return result;
         
         return result;
