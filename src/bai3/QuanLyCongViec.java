@@ -1,9 +1,6 @@
 
 package bai3;
-
-import java.util.Iterator;
 import java.util.PriorityQueue;
-
 
 public class QuanLyCongViec {
 
@@ -29,6 +26,11 @@ public class QuanLyCongViec {
         }
         
         return result;
-    }    
+    }
+    
+    public Integer soLuongCongViecTrongDanhSach(){
+        return dscv.size();
+    }
+    
     PriorityQueue<Task> dscv;
 }

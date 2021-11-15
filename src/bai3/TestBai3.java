@@ -15,6 +15,7 @@ public class TestBai3 {
         qlcv.themCongViec(new Task("Qua nha thay choi", 12, 0));
         
         System.out.println(qlcv);
-        //qlcv.runAll();
+        System.out.println("So luong cong viec trong danh sach: " 
+                + qlcv.soLuongCongViecTrongDanhSach() + " (cong viec)");
     }
 }

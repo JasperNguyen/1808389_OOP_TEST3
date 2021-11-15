@@ -8,9 +8,9 @@ public class Program {
 
 
     public static void main(String[] args) {
-        //TestSinhVien testSinhVien = new TestSinhVien();
+        TestSinhVien testSinhVien = new TestSinhVien();
         //TestHashSet testHashSet = new TestHashSet();
-        TestBai3 testBai3 = new TestBai3();
+        //TestBai3 testBai3 = new TestBai3();
     }
     
 }
